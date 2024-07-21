@@ -16,14 +16,11 @@ struct ContentView: View {
             List(parades) { parade in
                 HStack {
                     VStack(alignment: .leading) {
-                        Text("\(parade.Parade)")
-                        Text("\(parade.Location)")
+                        Text("\(parade.paradeName)")
+                        Text("\(parade.location)")
+                        Text("Starting: \(parade.time) CST")
+                        Text("Formation: \(parade.formation)")
                     }
-                    VStack(alignment: .leading) {
-                        Text("Starting: \(parade.Time) CST")
-                        Text("\(parade.FORMATION)")
-                    }
-                    
                 }
             }
             .task {
@@ -34,7 +31,7 @@ struct ContentView: View {
     
     func fetchJSON() async {
         do {
-            let url = URL(string:"https://run.mocky.io/v3/d087871d-8bdd-4a9d-977e-0550018e9760")!
+            let url = URL(string:"https://run.mocky.io/v3/12a897ed-8f0d-459d-b740-2d98e44fbee6")!
             let (data, response) = try await URLSession.shared.data(from: url)
             parades = try JSONDecoder().decode([ParadeKrewe].self, from: data)
         } catch {

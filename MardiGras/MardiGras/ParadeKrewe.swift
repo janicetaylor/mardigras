@@ -9,13 +9,15 @@ import Foundation
 
 struct ParadeKrewe: Codable, Identifiable {
     var id: Int 
-    var OBJECTID: Int
-    var Parade: String
-    var Location: String
-    var Day: String
-    var Date: String
-    var Time: String
-    var FORMATION: String
-    var DISBAND: String
-    var NumFloats: Int
+    var objectid: Int
+    var paradeName: String
+    var location: String
+    var day: String
+    var date: String
+    var time: String
+    var formation: String
+    var disband: String
+    var geom: String
+    var shapeSTLength: Float
+    var numFloats: Int
 }
