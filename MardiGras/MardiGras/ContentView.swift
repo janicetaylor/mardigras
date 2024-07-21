@@ -18,6 +18,7 @@ struct ContentView: View {
                     VStack(alignment: .leading) {
                         Text("\(parade.paradeName)")
                         Text("\(parade.location)")
+                        Text("\(parade.formattedDate)")
                         Text("Starting: \(parade.time) CST")
                         Text("Formation: \(parade.formation)")
                     }
@@ -26,6 +27,7 @@ struct ContentView: View {
             .task {
                 await fetchJSON()
             }
+            .navigationTitle("Mardi Gras Parades")
         }
     }
     
