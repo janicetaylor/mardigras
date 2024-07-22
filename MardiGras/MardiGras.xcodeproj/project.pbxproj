@@ -15,6 +15,7 @@
 		11BDB1332C4DE98800538C6F /* Inconsolata-VariableFont_wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11BDB1312C4DE98800538C6F /* Inconsolata-VariableFont_wdth,wght.ttf */; };
 		11BDB1342C4DE98800538C6F /* Karla-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11BDB1322C4DE98800538C6F /* Karla-VariableFont_wght.ttf */; };
 		11BDB1382C4DEBAA00538C6F /* Font+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BDB1372C4DEBAA00538C6F /* Font+Style.swift */; };
+		11BDB13A2C4DF03D00538C6F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BDB1392C4DF03D00538C6F /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		11BDB1322C4DE98800538C6F /* Karla-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		11BDB1352C4DE9A400538C6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		11BDB1372C4DEBAA00538C6F /* Font+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Style.swift"; sourceTree = "<group>"; };
+		11BDB1392C4DF03D00538C6F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +64,9 @@
 			children = (
 				11BDB1352C4DE9A400538C6F /* Info.plist */,
 				11BDB1202C4DB20A00538C6F /* MardiGrasApp.swift */,
+				11BDB1372C4DEBAA00538C6F /* Font+Style.swift */,
+				11BDB13B2C4DF04D00538C6F /* Model */,
 				11BDB1362C4DEB8B00538C6F /* Views */,
-				11BDB12E2C4DB29A00538C6F /* ParadeKrewe.swift */,
 				11BDB1242C4DB20C00538C6F /* Assets.xcassets */,
 				11BDB1302C4DE95900538C6F /* fonts */,
 				11BDB1262C4DB20C00538C6F /* Preview Content */,
@@ -92,9 +95,17 @@
 			isa = PBXGroup;
 			children = (
 				11BDB1222C4DB20A00538C6F /* ContentView.swift */,
-				11BDB1372C4DEBAA00538C6F /* Font+Style.swift */,
+				11BDB1392C4DF03D00538C6F /* MapView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		11BDB13B2C4DF04D00538C6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11BDB12E2C4DB29A00538C6F /* ParadeKrewe.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 			files = (
 				11BDB12F2C4DB29A00538C6F /* ParadeKrewe.swift in Sources */,
 				11BDB1232C4DB20A00538C6F /* ContentView.swift in Sources */,
+				11BDB13A2C4DF03D00538C6F /* MapView.swift in Sources */,
 				11BDB1382C4DEBAA00538C6F /* Font+Style.swift in Sources */,
 				11BDB1212C4DB20A00538C6F /* MardiGrasApp.swift in Sources */,
 			);
@@ -315,6 +327,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -345,6 +358,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

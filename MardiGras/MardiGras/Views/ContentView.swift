@@ -22,10 +22,14 @@ struct ContentView: View {
                         Text("\(parade.date)")
                         Text("Starting: \(parade.time) CST")
                         Text("Formation: \(parade.formation)")
+                        NavigationLink(destination: MapView()) {
+                            Text("view route")
+                        }
                     }
                     .font(.mediumHeadline)
                 }
             }
+            
             .task {
                 await fetchJSON()
             }
@@ -36,7 +40,7 @@ struct ContentView: View {
     init() {
         let appearance = UINavigationBarAppearance()
         let fontStyle: [NSAttributedString.Key: Any] = [
-            .font: UIFont(name: "Karla-Regular_Bold", size: 30)!
+            .font: UIFont(name: "Karla-Regular_Bold", size: 20)!
         ]
         appearance.largeTitleTextAttributes = fontStyle
         appearance.titleTextAttributes = fontStyle
