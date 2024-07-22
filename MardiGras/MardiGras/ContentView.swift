@@ -18,7 +18,7 @@ struct ContentView: View {
                     VStack(alignment: .leading) {
                         Text("\(parade.paradeName)")
                         Text("\(parade.location)")
-                        Text("\(parade.formattedDate)")
+                        Text("\(parade.date)")
                         Text("Starting: \(parade.time) CST")
                         Text("Formation: \(parade.formation)")
                     }
@@ -33,7 +33,7 @@ struct ContentView: View {
     
     func fetchJSON() async {
         do {
-            let url = URL(string:"https://run.mocky.io/v3/12a897ed-8f0d-459d-b740-2d98e44fbee6")!
+            let url = URL(string:"https://run.mocky.io/v3/b3dfa8bd-b531-4f28-8646-4a5b2d1ce6ae")!
             let (data, response) = try await URLSession.shared.data(from: url)
             parades = try JSONDecoder().decode([ParadeKrewe].self, from: data)
         } catch {

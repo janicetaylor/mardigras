@@ -20,14 +20,4 @@ struct ParadeKrewe: Codable, Identifiable {
     var geom: String
     var shapeSTLength: Float
     var numFloats: Int
-    var formattedDate: String {
-        return updateDateToString(dateString: date)
-    }
-        
-    func updateDateToString(dateString: String) -> String  {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMM d, yyyy"
-        let formattedDate = dateFormatter.date(from: dateString) ?? Date()
-        return dateFormatter.string(from: formattedDate)
-    }
 }
