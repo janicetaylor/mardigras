@@ -12,6 +12,9 @@
 		11BDB1252C4DB20C00538C6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BDB1242C4DB20C00538C6F /* Assets.xcassets */; };
 		11BDB1282C4DB20C00538C6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BDB1272C4DB20C00538C6F /* Preview Assets.xcassets */; };
 		11BDB12F2C4DB29A00538C6F /* ParadeKrewe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BDB12E2C4DB29A00538C6F /* ParadeKrewe.swift */; };
+		11BDB1332C4DE98800538C6F /* Inconsolata-VariableFont_wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11BDB1312C4DE98800538C6F /* Inconsolata-VariableFont_wdth,wght.ttf */; };
+		11BDB1342C4DE98800538C6F /* Karla-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11BDB1322C4DE98800538C6F /* Karla-VariableFont_wght.ttf */; };
+		11BDB1382C4DEBAA00538C6F /* Font+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BDB1372C4DEBAA00538C6F /* Font+Style.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,10 @@
 		11BDB1242C4DB20C00538C6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11BDB1272C4DB20C00538C6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		11BDB12E2C4DB29A00538C6F /* ParadeKrewe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParadeKrewe.swift; sourceTree = "<group>"; };
+		11BDB1312C4DE98800538C6F /* Inconsolata-VariableFont_wdth,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inconsolata-VariableFont_wdth,wght.ttf"; sourceTree = "<group>"; };
+		11BDB1322C4DE98800538C6F /* Karla-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		11BDB1352C4DE9A400538C6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		11BDB1372C4DEBAA00538C6F /* Font+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Style.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +60,12 @@
 		11BDB11F2C4DB20A00538C6F /* MardiGras */ = {
 			isa = PBXGroup;
 			children = (
+				11BDB1352C4DE9A400538C6F /* Info.plist */,
 				11BDB1202C4DB20A00538C6F /* MardiGrasApp.swift */,
-				11BDB1222C4DB20A00538C6F /* ContentView.swift */,
+				11BDB1362C4DEB8B00538C6F /* Views */,
 				11BDB12E2C4DB29A00538C6F /* ParadeKrewe.swift */,
 				11BDB1242C4DB20C00538C6F /* Assets.xcassets */,
+				11BDB1302C4DE95900538C6F /* fonts */,
 				11BDB1262C4DB20C00538C6F /* Preview Content */,
 			);
 			path = MardiGras;
@@ -68,6 +77,24 @@
 				11BDB1272C4DB20C00538C6F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		11BDB1302C4DE95900538C6F /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				11BDB1312C4DE98800538C6F /* Inconsolata-VariableFont_wdth,wght.ttf */,
+				11BDB1322C4DE98800538C6F /* Karla-VariableFont_wght.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		11BDB1362C4DEB8B00538C6F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11BDB1222C4DB20A00538C6F /* ContentView.swift */,
+				11BDB1372C4DEBAA00538C6F /* Font+Style.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +156,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				11BDB1282C4DB20C00538C6F /* Preview Assets.xcassets in Resources */,
+				11BDB1342C4DE98800538C6F /* Karla-VariableFont_wght.ttf in Resources */,
 				11BDB1252C4DB20C00538C6F /* Assets.xcassets in Resources */,
+				11BDB1332C4DE98800538C6F /* Inconsolata-VariableFont_wdth,wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +171,7 @@
 			files = (
 				11BDB12F2C4DB29A00538C6F /* ParadeKrewe.swift in Sources */,
 				11BDB1232C4DB20A00538C6F /* ContentView.swift in Sources */,
+				11BDB1382C4DEBAA00538C6F /* Font+Style.swift in Sources */,
 				11BDB1212C4DB20A00538C6F /* MardiGrasApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +309,7 @@
 				DEVELOPMENT_TEAM = R82DC4STSC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MardiGras/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -308,6 +339,7 @@
 				DEVELOPMENT_TEAM = R82DC4STSC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MardiGras/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

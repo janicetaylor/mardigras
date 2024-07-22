@@ -17,11 +17,13 @@ struct ContentView: View {
                 HStack {
                     VStack(alignment: .leading) {
                         Text("\(parade.paradeName)")
+                            .font(.largeHeadline)
                         Text("\(parade.location)")
                         Text("\(parade.date)")
                         Text("Starting: \(parade.time) CST")
                         Text("Formation: \(parade.formation)")
                     }
+                    .font(.mediumHeadline)
                 }
             }
             .task {
@@ -29,6 +31,18 @@ struct ContentView: View {
             }
             .navigationTitle("Mardi Gras Parades")
         }
+    }
+    
+    init() {
+        let appearance = UINavigationBarAppearance()
+        let fontStyle: [NSAttributedString.Key: Any] = [
+            .font: UIFont(name: "Karla-Regular_Bold", size: 30)!
+        ]
+        appearance.largeTitleTextAttributes = fontStyle
+        appearance.titleTextAttributes = fontStyle
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().compactAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
     }
     
     func fetchJSON() async {
