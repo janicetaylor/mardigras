@@ -9,6 +9,6 @@ import Foundation
 import SwiftUI
 
 extension Font {
-    static let largeHeadline: Font = Font.custom("Karla-Regular_Bold", size: 30.0)
-    static let mediumHeadline: Font = Font.custom("Inconsolata", size: 18.0)
+    static let paradeLargeHeadline: Font = Font.custom("Arial Rounded MT Bold", size: 20.0)
+    static let paradeMediumHeadline: Font = Font.custom("Arial", size: 14.0)
 }

@@ -12,8 +12,6 @@
 		11BDB1252C4DB20C00538C6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BDB1242C4DB20C00538C6F /* Assets.xcassets */; };
 		11BDB1282C4DB20C00538C6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BDB1272C4DB20C00538C6F /* Preview Assets.xcassets */; };
 		11BDB12F2C4DB29A00538C6F /* ParadeKrewe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BDB12E2C4DB29A00538C6F /* ParadeKrewe.swift */; };
-		11BDB1332C4DE98800538C6F /* Inconsolata-VariableFont_wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11BDB1312C4DE98800538C6F /* Inconsolata-VariableFont_wdth,wght.ttf */; };
-		11BDB1342C4DE98800538C6F /* Karla-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11BDB1322C4DE98800538C6F /* Karla-VariableFont_wght.ttf */; };
 		11BDB1382C4DEBAA00538C6F /* Font+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BDB1372C4DEBAA00538C6F /* Font+Style.swift */; };
 		11BDB13A2C4DF03D00538C6F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BDB1392C4DF03D00538C6F /* MapView.swift */; };
 /* End PBXBuildFile section */
@@ -25,8 +23,6 @@
 		11BDB1242C4DB20C00538C6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11BDB1272C4DB20C00538C6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		11BDB12E2C4DB29A00538C6F /* ParadeKrewe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParadeKrewe.swift; sourceTree = "<group>"; };
-		11BDB1312C4DE98800538C6F /* Inconsolata-VariableFont_wdth,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inconsolata-VariableFont_wdth,wght.ttf"; sourceTree = "<group>"; };
-		11BDB1322C4DE98800538C6F /* Karla-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		11BDB1352C4DE9A400538C6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		11BDB1372C4DEBAA00538C6F /* Font+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Style.swift"; sourceTree = "<group>"; };
 		11BDB1392C4DF03D00538C6F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -85,8 +81,6 @@
 		11BDB1302C4DE95900538C6F /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				11BDB1312C4DE98800538C6F /* Inconsolata-VariableFont_wdth,wght.ttf */,
-				11BDB1322C4DE98800538C6F /* Karla-VariableFont_wght.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -167,9 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11BDB1282C4DB20C00538C6F /* Preview Assets.xcassets in Resources */,
-				11BDB1342C4DE98800538C6F /* Karla-VariableFont_wght.ttf in Resources */,
 				11BDB1252C4DB20C00538C6F /* Assets.xcassets in Resources */,
-				11BDB1332C4DE98800538C6F /* Inconsolata-VariableFont_wdth,wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

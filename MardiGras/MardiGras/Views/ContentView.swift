@@ -15,43 +15,46 @@ struct ContentView: View {
         NavigationStack {
             List(parades) { parade in
                 HStack {
+                    Image("parade1")
                     VStack(alignment: .leading) {
                         Text("\(parade.paradeName)")
-                            .font(.largeHeadline)
+                            .font(.paradeLargeHeadline)
+                            .foregroundStyle(.black)
                         Text("\(parade.location)")
-                        Text("\(parade.date)")
-                        Text("Starting: \(parade.time) CST")
-                        Text("Formation: \(parade.formation)")
-                        NavigationLink(destination: MapView()) {
-                            Text("view route")
-                        }
+                            .font(.paradeMediumHeadline)
+                            .foregroundStyle(.gray)
                     }
-                    .font(.mediumHeadline)
+                    NavigationLink(destination: MapView()) { }
                 }
             }
-            
+            .listStyle(.sidebar)
             .task {
                 await fetchJSON()
             }
-            .navigationTitle("Mardi Gras Parades")
+            .navigationTitle("Parades")
         }
     }
     
     init() {
-        let appearance = UINavigationBarAppearance()
-        let fontStyle: [NSAttributedString.Key: Any] = [
-            .font: UIFont(name: "Karla-Regular_Bold", size: 20)!
-        ]
-        appearance.largeTitleTextAttributes = fontStyle
-        appearance.titleTextAttributes = fontStyle
-        UINavigationBar.appearance().standardAppearance = appearance
-        UINavigationBar.appearance().compactAppearance = appearance
-        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        
+        for name in UIFont.familyNames {
+            print(name)
+        }
+        
+//        let appearance = UINavigationBarAppearance()
+//        let fontStyle: [NSAttributedString.Key: Any] = [
+//            .font: UIFont(name: "Karla-Regular_Bold", size: 20)!
+//        ]
+//        appearance.largeTitleTextAttributes = fontStyle
+//        appearance.titleTextAttributes = fontStyle
+//        UINavigationBar.appearance().standardAppearance = appearance
+//        UINavigationBar.appearance().compactAppearance = appearance
+//        UINavigationBar.appearance().scrollEdgeAppearance = appearance
     }
     
     func fetchJSON() async {
         do {
-            let url = URL(string:"https://run.mocky.io/v3/b3dfa8bd-b531-4f28-8646-4a5b2d1ce6ae")!
+            let url = URL(string:"https://run.mocky.io/v3/92d051ce-c3c7-44aa-8595-275e49b2e13a")!
             let (data, response) = try await URLSession.shared.data(from: url)
             parades = try JSONDecoder().decode([ParadeKrewe].self, from: data)
         } catch {
