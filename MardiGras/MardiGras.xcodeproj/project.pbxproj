@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		114CAD332C5087A10097D78D /* ParadeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114CAD322C5087A10097D78D /* ParadeView.swift */; };
+		114CAD352C51A4A00097D78D /* PlacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114CAD342C51A4A00097D78D /* PlacesView.swift */; };
+		114CAD372C51A5810097D78D /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114CAD362C51A5810097D78D /* Place.swift */; };
 		11BDB1212C4DB20A00538C6F /* MardiGrasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BDB1202C4DB20A00538C6F /* MardiGrasApp.swift */; };
 		11BDB1232C4DB20A00538C6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BDB1222C4DB20A00538C6F /* ContentView.swift */; };
 		11BDB1252C4DB20C00538C6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BDB1242C4DB20C00538C6F /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		114CAD322C5087A10097D78D /* ParadeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParadeView.swift; sourceTree = "<group>"; };
+		114CAD342C51A4A00097D78D /* PlacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesView.swift; sourceTree = "<group>"; };
+		114CAD362C51A5810097D78D /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		11BDB11D2C4DB20A00538C6F /* MardiGras.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MardiGras.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BDB1202C4DB20A00538C6F /* MardiGrasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MardiGrasApp.swift; sourceTree = "<group>"; };
 		11BDB1222C4DB20A00538C6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,6 +97,7 @@
 				11BDB1222C4DB20A00538C6F /* ContentView.swift */,
 				11BDB1392C4DF03D00538C6F /* MapView.swift */,
 				114CAD322C5087A10097D78D /* ParadeView.swift */,
+				114CAD342C51A4A00097D78D /* PlacesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -101,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				11BDB12E2C4DB29A00538C6F /* ParadeKrewe.swift */,
+				114CAD362C51A5810097D78D /* Place.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,6 +184,8 @@
 				11BDB12F2C4DB29A00538C6F /* ParadeKrewe.swift in Sources */,
 				114CAD332C5087A10097D78D /* ParadeView.swift in Sources */,
 				11BDB1232C4DB20A00538C6F /* ContentView.swift in Sources */,
+				114CAD372C51A5810097D78D /* Place.swift in Sources */,
+				114CAD352C51A4A00097D78D /* PlacesView.swift in Sources */,
 				11BDB13A2C4DF03D00538C6F /* MapView.swift in Sources */,
 				11BDB1382C4DEBAA00538C6F /* Font+Style.swift in Sources */,
 				11BDB1212C4DB20A00538C6F /* MardiGrasApp.swift in Sources */,
