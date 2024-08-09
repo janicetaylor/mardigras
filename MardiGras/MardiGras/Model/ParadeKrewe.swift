@@ -13,11 +13,12 @@ struct ParadeKrewe: Codable, Identifiable {
     var paradeName: String
     var location: String
     var day: String
-    var date: String
     var time: String
     var formation: String
     var disband: String
     var geom: String
     var shapeSTLength: Float
     var numFloats: Int
+    var paradeDate: String
+    var thumbnail: String 
 }
