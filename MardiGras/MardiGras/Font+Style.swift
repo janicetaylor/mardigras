@@ -11,4 +11,5 @@ import SwiftUI
 extension Font {
     static let paradeLargeHeadline: Font = Font.custom("HelveticaNeue-Bold", size: 22.0)
     static let paradeMediumHeadline: Font = Font.custom("HelveticaNeue", size: 18.0)
+    static let paradeSmallHeadline: Font = Font.custom("HelveticaNeue", size: 14.0)
 }
