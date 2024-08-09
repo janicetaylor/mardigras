@@ -13,25 +13,25 @@ struct ContentView: View {
         TabView {
             PlacesView()
                 .tabItem {
-                    Image(systemName: "1.circle")
+                    Image(systemName: "flag.fill")
                     Text("Places")
                 }
                 .tag(1)
             ParadeView()
                 .tabItem {
-                    Image(systemName: "2.circle")
+                    Image(systemName: "location.circle.fill")
                     Text("Parades")
                 }
                 .tag(2)
             Text("third view")
                 .tabItem {
-                    Image(systemName: "3.circle")
+                    Image(systemName: "star.circle.fill")
                     Text("Favorites")
                 }
                 .tag(3)
             Text("fourth view")
                 .tabItem {
-                    Image(systemName: "4.circle")
+                    Image(systemName: "person.fill")
                     Text("Settings")
                 }
                 .tag(4)
