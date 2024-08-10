@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ParadeKrewe: Codable, Identifiable {
+struct Parade: Codable, Identifiable {
     var id: Int 
     var objectid: Int
     var paradeName: String
@@ -21,4 +21,7 @@ struct ParadeKrewe: Codable, Identifiable {
     var numFloats: Int
     var paradeDate: String
     var thumbnail: String 
+    var prefixThumbnailUrl: String {
+        return "https://janicetaylor.app/mardigras/parade-images/"
+    }
 }

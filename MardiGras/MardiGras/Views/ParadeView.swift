@@ -9,13 +9,14 @@ import SwiftUI
 
 struct ParadeView: View {
     
-    @State private var parades = [ParadeKrewe]()
+    @State private var parades = [Parade]()
+    let prefixThumbnailUrl = "https://janicetaylor.app/mardigras/parade-images/"
 
     var body: some View {
         NavigationStack {
             List(parades) { parade in
                     VStack(alignment: .leading) {
-                        AsyncImage(url: URL(string: "\(parade.thumbnail)"),
+                        AsyncImage(url: URL(string: "\(prefixThumbnailUrl)\(parade.thumbnail)"),
                             content: { image in
                             image.resizable()
                                 .aspectRatio(contentMode: .fit)
@@ -30,9 +31,10 @@ struct ParadeView: View {
                         Text("\(parade.paradeDate) \(parade.time)")
                             .font(.paradeSmallHeadline)
                             .foregroundStyle(.gray)
-                        NavigationLink(destination: MapView()) { Text("view more") }
+                        NavigationLink(destination: MapView()) { Text("details") }
                     }
             }
+            .navigationTitle("Parades")
             .listStyle(.plain)
             .task {
                 await fetchJSON()
@@ -42,9 +44,9 @@ struct ParadeView: View {
     
     func fetchJSON() async {
         do {
-            let url = URL(string:"https://run.mocky.io/v3/4989e57c-ebc3-4888-9e08-daf1ff40e5ba")!
+            let url = URL(string:"https://janicetaylor.app/mardigras/parades.json")!
             let (data, response) = try await URLSession.shared.data(from: url)
-            parades = try JSONDecoder().decode([ParadeKrewe].self, from: data)
+            parades = try JSONDecoder().decode([Parade].self, from: data)
         } catch {
             print(error)
         }

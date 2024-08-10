@@ -14,4 +14,5 @@ struct Place: Codable, Identifiable {
     var location: String
     var latitude: Float 
     var longitude: Float
+    var thumbnailUrl: String
 }
